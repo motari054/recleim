@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="https://cdn.tailwindcss.com"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}| {% endblock  %}| Recleim</title>
 </head>
 <body>
+    <nav class="py-6 px-6 flex justify-between items-center border-b border-gray-200">
+        <a href="/" class="text-xl font-semibold">Recycle</a>
+        <div class="space-x-4">
+            <a href="#" class="text-lg font-semibold hover:text-gray-500">Services</a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-500">Request for a Service</a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-500">Running Service</a>
+            <a href="#" class="text-lg font-semibold hover:text-gray-500">Our Team</a>
+
+            <a href="#" class="px-5 py-3 text-lg font-semibold bg-teal-500 text-white rounded hover:bg-teal-700">Sign Up</a>
+        </div>
+    </nav>
     {% block content %}
     {% endblock content %}
 </body>
